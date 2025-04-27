@@ -20,7 +20,7 @@ void main() {
       when(client
               .get(Uri.parse('https://jsonplaceholder.typicode.com/albums/1')))
           .thenAnswer((_) async {
-        print("we are here");
+        // print("we are here");
         return http.Response('{"userId": 1, "id": 2, "title": "mock"}', 200);
       });
 
